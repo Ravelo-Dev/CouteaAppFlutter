@@ -4,6 +4,8 @@ import 'dart:convert';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ClimaRD extends StatefulWidget {
+  const ClimaRD({super.key});
+
   @override
   _ClimaRDState createState() => _ClimaRDState();
 }
@@ -37,7 +39,7 @@ class _ClimaRDState extends State<ClimaRD> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Clima')),
+      appBar: AppBar(title: const Text('Clima')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -45,8 +47,8 @@ class _ClimaRDState extends State<ClimaRD> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                FaIcon(FontAwesomeIcons.cloud),
-                SizedBox(width: 10),
+                const FaIcon(FontAwesomeIcons.cloud),
+                const SizedBox(width: 10),
                 Text('Descripción: $_description'),
               ],
             ),
@@ -54,8 +56,8 @@ class _ClimaRDState extends State<ClimaRD> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                FaIcon(FontAwesomeIcons.thermometerHalf),
-                SizedBox(width: 10),
+                const FaIcon(FontAwesomeIcons.thermometerHalf),
+                const SizedBox(width: 10),
                 Text('Temperatura: ${_temperature.toStringAsFixed(1)}°C'),
               ],
             ),
@@ -63,8 +65,8 @@ class _ClimaRDState extends State<ClimaRD> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                FaIcon(FontAwesomeIcons.tint),
-                SizedBox(width: 10),
+                const FaIcon(FontAwesomeIcons.tint),
+                const SizedBox(width: 10),
                 Text('Humedad: $_humidity%'),
               ],
             ),
@@ -72,8 +74,8 @@ class _ClimaRDState extends State<ClimaRD> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                FaIcon(FontAwesomeIcons.wind),
-                SizedBox(width: 10),
+                const FaIcon(FontAwesomeIcons.wind),
+                const SizedBox(width: 10),
                 Text(
                     'Velocidad del viento: ${_windSpeed.toStringAsFixed(1)} m/s'),
               ],

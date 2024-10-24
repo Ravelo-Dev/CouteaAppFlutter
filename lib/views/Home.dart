@@ -18,42 +18,42 @@ class Home extends StatelessWidget {
               child: Text('Menu', style: TextStyle(color: Colors.white)),
             ),
             ListTile(
-              leading: Icon(Icons.person),
+              leading: const Icon(Icons.person),
               title: const Text('Prediccion de Genero'),
               onTap: () {
                 Navigator.pushNamed(context, '/genero');
               },
             ),
             ListTile(
-              leading: Icon(Icons.cake),
+              leading: const Icon(Icons.cake),
               title: const Text('Prediccion de Edad'),
               onTap: () {
                 Navigator.pushNamed(context, '/edad');
               },
             ),
             ListTile(
-              leading: Icon(Icons.school),
+              leading: const Icon(Icons.school),
               title: const Text('Buscar Universidad'),
               onTap: () {
                 Navigator.pushNamed(context, '/universidad');
               },
             ),
             ListTile(
-              leading: Icon(Icons.cloud),
+              leading: const Icon(Icons.cloud),
               title: const Text('Clima'),
               onTap: () {
                 Navigator.pushNamed(context, '/clima');
               },
             ),
             ListTile(
-              leading: Icon(Icons.article),
+              leading: const Icon(Icons.article),
               title: const Text('Noticias de Billboard'),
               onTap: () {
                 Navigator.pushNamed(context, '/noticias');
               },
             ),
             ListTile(
-              leading: Icon(Icons.info),
+              leading: const Icon(Icons.info),
               title: const Text('Acerca de'),
               onTap: () {
                 Navigator.pushNamed(context, '/about');

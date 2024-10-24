@@ -63,7 +63,7 @@ class PrediccionGeneroState extends State<PrediccionGenero> {
               height: 170,
               width: 170,
               child: Center(
-                child: _genero == 'error' ? Text('Error') : Container(),
+                child: _genero == 'error' ? const Text('Error') : Container(),
               ),
             ),
           ],
