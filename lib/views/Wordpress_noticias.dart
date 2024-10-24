@@ -31,7 +31,17 @@ class _WordPressNoticiasState extends State<WordPressNoticias> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Noticias de Billboard')),
+      appBar: AppBar(
+        title: Row(
+          children: [
+            Image.asset(
+              'lib/assets/images/Billboard-Logo.png', // Ruta del logo
+              height: 70,
+            ),
+            SizedBox(width: 10),
+          ],
+        ),
+      ),
       body: ListView.builder(
         itemCount: _news.length,
         itemBuilder: (context, index) {

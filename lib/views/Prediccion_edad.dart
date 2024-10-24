@@ -37,13 +37,13 @@ class _PrediccionEdadState extends State<PrediccionEdad> {
           _edad = data['age'];
           if (_edad < 18) {
             _mensaje = 'JOVEN';
-            _imgURL = 'assets/Jovenes.jpg';
+            _imgURL = 'lib/assets/images/Jovenes.jpg';
           } else if (_edad < 60) {
             _mensaje = 'ADULTO';
-            _imgURL = 'assets/Adultos.jpg';
+            _imgURL = 'lib/assets/images/Adultos.jpg';
           } else {
             _mensaje = 'ANCIANO';
-            _imgURL = 'assets/Ancianos.jpg';
+            _imgURL = 'lib/assets/images/Ancianos.jpg';
           }
         });
       } else {
@@ -86,6 +86,8 @@ class _PrediccionEdadState extends State<PrediccionEdad> {
                       _imgURL.isNotEmpty
                           ? Image.asset(
                               _imgURL,
+                              height: 180,
+                              width: 180,
                               errorBuilder: (context, error, stackTrace) {
                                 return const Text('Error al cargar la imagen');
                               },

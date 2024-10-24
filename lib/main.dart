@@ -1,3 +1,4 @@
+import 'package:couteau_app/views/About.dart';
 import 'package:flutter/material.dart';
 import 'views/Home.dart';
 import 'views/Prediccion_genero.dart';
@@ -28,6 +29,7 @@ class MainApp extends StatelessWidget {
         '/universidad': (context) => PrediccionUniversidad(),
         '/clima': (context) => ClimaRD(),
         '/noticias': (context) => WordPressNoticias(),
+        '/about': (context) => About(),
       },
     );
   }

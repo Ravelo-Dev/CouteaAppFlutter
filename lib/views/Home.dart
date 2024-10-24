@@ -47,7 +47,7 @@ class Home extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(Icons.article),
-              title: const Text('Noticias de WordPress'),
+              title: const Text('Noticias de Billboard'),
               onTap: () {
                 Navigator.pushNamed(context, '/noticias');
               },

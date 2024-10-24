@@ -23,3 +23,9 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - lib/assets/images/Billboard-Logo.png
+    - lib/assets/images/Adultos.jpg
+    - lib/assets/images/Ancianos.jpg
+    - lib/assets/images/Jovenes.jpg
+    - lib/assets/images/img2x2.jpeg
