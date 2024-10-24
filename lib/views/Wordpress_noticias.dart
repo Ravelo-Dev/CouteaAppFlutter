@@ -6,6 +6,8 @@ import 'package:flutter_html/flutter_html.dart';
 import 'package:html_unescape/html_unescape.dart';
 
 class WordPressNoticias extends StatefulWidget {
+  const WordPressNoticias({super.key});
+
   @override
   _WordPressNoticiasState createState() => _WordPressNoticiasState();
 }
@@ -35,10 +37,10 @@ class _WordPressNoticiasState extends State<WordPressNoticias> {
         title: Row(
           children: [
             Image.asset(
-              'lib/assets/images/Billboard-Logo.png', // Ruta del logo
+              'assets/images/Billboard-Logo.png', // Ruta del logo
               height: 70,
             ),
-            SizedBox(width: 10),
+            const SizedBox(width: 10),
           ],
         ),
       ),
@@ -47,7 +49,7 @@ class _WordPressNoticiasState extends State<WordPressNoticias> {
         itemBuilder: (context, index) {
           var unescape = HtmlUnescape();
           return Card(
-            margin: EdgeInsets.all(10),
+            margin: const EdgeInsets.all(10),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -55,7 +57,8 @@ class _WordPressNoticiasState extends State<WordPressNoticias> {
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
                     unescape.convert(_news[index]['title']['rendered']),
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    style: const TextStyle(
+                        fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                 ),
                 Padding(
@@ -68,14 +71,15 @@ class _WordPressNoticiasState extends State<WordPressNoticias> {
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
                     'Publicado el: ${_news[index]['date']}',
-                    style: TextStyle(fontSize: 12, fontStyle: FontStyle.italic),
+                    style: const TextStyle(
+                        fontSize: 12, fontStyle: FontStyle.italic),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: ElevatedButton(
                     onPressed: () => launch(_news[index]['link']),
-                    child: Text('Leer más'),
+                    child: const Text('Leer más'),
                   ),
                 ),
               ],

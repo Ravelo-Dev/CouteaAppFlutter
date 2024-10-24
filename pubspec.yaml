@@ -25,13 +25,13 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - lib/assets/images/Billboard-Logo.png
-    - lib/assets/images/Adultos.jpg
-    - lib/assets/images/Ancianos.jpg
-    - lib/assets/images/Jovenes.jpg
-    - lib/assets/images/img2x2.jpeg
+    - assets/images/Billboard-Logo.png
+    - assets/images/Adultos.jpg
+    - assets/images/Ancianos.jpg
+    - assets/images/Jovenes.jpg
+    - assets/images/img2x2.jpeg
 
 flutter_icons:
   android: true
   ios: true
-  image_path: "lib/assets/images/img2x2.jpeg"
+  image_path: "assets/images/img2x2.jpeg"

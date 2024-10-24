@@ -37,13 +37,13 @@ class _PrediccionEdadState extends State<PrediccionEdad> {
           _edad = data['age'];
           if (_edad < 18) {
             _mensaje = 'JOVEN';
-            _imgURL = 'lib/assets/images/Jovenes.jpg';
+            _imgURL = 'assets/images/Jovenes.jpg';
           } else if (_edad < 60) {
             _mensaje = 'ADULTO';
-            _imgURL = 'lib/assets/images/Adultos.jpg';
+            _imgURL = 'assets/images/Adultos.jpg';
           } else {
             _mensaje = 'ANCIANO';
-            _imgURL = 'lib/assets/images/Ancianos.jpg';
+            _imgURL = 'assets/images/Ancianos.jpg';
           }
         });
       } else {
