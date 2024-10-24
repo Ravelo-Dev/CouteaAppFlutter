@@ -74,9 +74,11 @@ class _PrediccionEdadState extends State<PrediccionEdad> {
               controller: _controller,
               decoration: const InputDecoration(labelText: 'Nombre'),
             ),
+            const SizedBox(height: 20),
             ElevatedButton(
                 onPressed: () => _predecirEdad(_controller.text),
                 child: const Text('Predecir Edad')),
+            const SizedBox(height: 20),
             _isLoading
                 ? const CircularProgressIndicator()
                 : Column(

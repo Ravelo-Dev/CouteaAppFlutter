@@ -63,10 +63,12 @@ class _BuscarUniversidadState extends State<PrediccionUniversidad> {
               controller: _controller,
               decoration: const InputDecoration(labelText: 'País'),
             ),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () => _BuscarUniversidades(_controller.text),
               child: const Text('Buscar'),
             ),
+            const SizedBox(height: 20),
             Expanded(
               child: ListView.builder(
                 itemCount: _universidades.length,

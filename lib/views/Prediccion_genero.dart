@@ -21,7 +21,7 @@ class PrediccionGeneroState extends State<PrediccionGenero> {
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
         setState(() {
-          _genero = data['gender'] ?? 'unknown';
+          _genero = data['gender'] ?? 'desconocido';
           _color = _genero == 'male'
               ? Colors.blue
               : (_genero == 'female' ? Colors.pink : Colors.grey);
@@ -52,15 +52,19 @@ class PrediccionGeneroState extends State<PrediccionGenero> {
               controller: _controller,
               decoration: const InputDecoration(labelText: 'Nombre'),
             ),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () => _predecirGenero(_controller.text),
               child: const Text('Predecir Género'),
             ),
+            const SizedBox(height: 20),
             Container(
               color: _color,
-              height: 100,
-              width: 100,
-              child: Center(child: Text(_genero)),
+              height: 170,
+              width: 170,
+              child: Center(
+                child: _genero == 'error' ? Text('Error') : Container(),
+              ),
             ),
           ],
         ),

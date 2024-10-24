@@ -37,7 +37,7 @@ class _ClimaRDState extends State<ClimaRD> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Clima en $_cityName')),
+      appBar: AppBar(title: Text('Clima')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -50,6 +50,7 @@ class _ClimaRDState extends State<ClimaRD> {
                 Text('Descripción: $_description'),
               ],
             ),
+            const SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -58,6 +59,7 @@ class _ClimaRDState extends State<ClimaRD> {
                 Text('Temperatura: ${_temperature.toStringAsFixed(1)}°C'),
               ],
             ),
+            const SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -66,6 +68,7 @@ class _ClimaRDState extends State<ClimaRD> {
                 Text('Humedad: $_humidity%'),
               ],
             ),
+            const SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
